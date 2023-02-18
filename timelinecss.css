@@ -1,0 +1,61 @@
+
+body{
+    background-color: #1e1e1e;
+}
+.timeline {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    color: bisque;
+}
+.t__comp{
+    margin: 0 20px 20px 20px;
+}
+
+.t__comp--bg{
+    padding: 1.5em;
+    background: #801234;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.t_date--right{
+    text-align: right;
+    color: white;
+}
+.t_date{
+    color: white;
+}
+.t_partition{
+    position: relative;
+    background: white;
+
+}
+.t_circle{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+
+
+}
+.t1{
+    margin: 0;
+    font-size: 1.15em;
+    color: white;
+    font-weight: bold;
+}
+
+.t_para{
+    line-height: 1.5;
+    color: whitesmoke;
+}
+.t_circle--bottom{
+    top: initial;
+    bottom: 0;
+}
