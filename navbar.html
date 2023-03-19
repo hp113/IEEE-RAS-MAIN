@@ -5,83 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="styles.css">
     <title>Navigation bar</title>
 </head>
-<style>
-    body {
-        background-color: #1e1e1e;
-    }
-
-    #nav {
-        transform: translateX(-100%);
-        transition-duration: 1.5s;
-    }
-
-    .nav-container:hover #nav {
-        transform: translateX(0);
-    }
-
-    #nav {
-        position: fixed;
-        box-sizing: border-box;
-        background-color: #801234;
-        opacity: 0.5;
-    }
-
-    .sidebar {
-        vertical-align: middle;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        text-align: center;
-        background-color: transparent;
-        margin: 0;
-        padding-top: 13vw;
-        padding-bottom: 13vw;
-        gap: 2vw;
-    }
-
-    @media screen and (max-width: 700px) {
-        .sidebar {
-            width: 100%;
-            height: auto;
-            position: relative;
-        }
-        .sidebar a {float: left;}
-            div.content {margin-left: 0;
-        }
-    }
-
-    @media screen and (max-width: 400px) {
-        .sidebar a {
-            text-align: center;
-            float: none;
-        }
-    }
-
-    .but {
-        color: white;
-        background-color: transparent;
-        cursor: grabbing;
-        border: none;
-        border-radius: 2vw;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 2vw;
-    }
-
-    .but:active,
-    .but:hover {
-        transform: scale(1.2);
-    }
-    .about {
-        background-color: #801234;
-        border-radius: 6vw 6vw 0 0;
-        align-items: start;
-        overflow-wrap: ;
-    }
-</style>
-
 <body>
     <div class="overlay">
         <div class="nav-container">
@@ -96,41 +22,18 @@
             </nav>
         </div>
         <div>
-            <img >
-            <p style="color: white;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-                corporis qui dolorum aspernatur, vel eaque earum mollitia eveniet aut
-                impedit, laboriosam omnis, ipsum quibusdam cumque ad et odit
-                perferendis voluptatem. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Quae, odit aut a quo ea illo perferendis voluptas
-                debitis repellendus similique dolorum perspiciatis officia quia ipsum
-                asperiores, quidem beatae voluptatibus corporis. Lorem ipsum, dolor
-                sit amet consectetur adipisicing elit. Sunt officia eius veritatis
-                provident asperiores distinctio corporis debitis quas consectetur
-                nihil, ratione eos perspiciatis vero sed, accusamus nobis nesciunt
-                nostrum adipisci. Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Nulla exercitationem dolorum, vero quasi, tempora hic
-                consequatur eos qui sapiente quia nam placeat! Vel eveniet deserunt
-                non inventore magnam, fugit facilis! Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque, laborum repellat perferendis
-                impedit eaque error non minima iure necessitatibus, qui soluta id
-                similique deserunt quod dolore quia explicabo beatae nemo. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Magnam explicabo deleniti
-                cumque eveniet officia consequatur fuga animi voluptatum distinctio.
-                Quia neque voluptates provident repudiandae doloribus cum beatae earum
-                distinctio culpa. Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit. Soluta eos porro ducimus eius eligendi, fugit repellat aliquam?
-                In accusantium fugit nostrum. Amet voluptatem molestiae voluptates
-                sunt repellat mollitia reiciendis velit. Lorem ipsum, dolor sit amet
-                consectetur adipisicing elit. Quae nam voluptates nisi, error itaque
-                totam aut laboriosam velit exercitationem obcaecati adipisci illum,
-                recusandae sed voluptate! Eos sequi natus mollitia deserunt.
-            </p>
-            <div class="about">
-                <p>
-                    We at the student chapter of IEEE RAS are a group of multidisciplinary and technical enthusiasts focusing on robotics and automation. Our goal is build and promote automation across the globe for practical and innovative applications. For this, this chapter conducts various workshops, seminars, industrial visits outreach programs for its students. We also promote technical competitions and work on funded projects related to electronics and IoT applications. Got something interesting for us? Let’s get in touch
-                </p>
+            <div class="logodiv">
+                <img src="RAS_Full_Logo.png" id="logo" class="logo" alt="IEEE RAS logo"/>
             </div>
+            <div class="aboutus">
+                <img src="intro.gif" class="intro-gif">
+                <p class="about_text" onload="document.body.className += 'loaded';">
+                We at the student chapter of IEEE RAS are a enthusiasts focusing on robotics and automation with a goal to build and promote automation across the globe just like this text-box.
+                </p>                
+            </div>
+        </div>
+        <div>
+            <p class="next">&#8964;</p>
         </div>
     </div>
 </body>

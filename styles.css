@@ -1,0 +1,150 @@
+body {
+    background-color: #1e1e1e;
+}
+
+#nav {
+    transform: translateX(-100%);
+    transition-duration: 1.5s;
+}
+
+.nav-container:hover #nav {
+    transform: translateX(0);
+}
+
+#nav {
+    position: fixed;
+    box-sizing: border-box;
+    background-color: #801234;
+    opacity: 0.9;
+}
+
+.sidebar {
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: center;
+    background-color: transparent;
+    margin: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding-top: 15vw;
+    padding-bottom: 15vw;
+    gap: 2vw;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {float: left;}
+        div.content {margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+.but {
+    color: white;
+    background-color: transparent;
+    cursor: grabbing;
+    border: none;
+    border-radius: 2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+}
+
+.but:active,
+.but:hover {
+    transform: scale(1.2);
+}
+.about {
+    background-color: #801234;
+    border-radius: 6vw 6vw 0 0;
+    align-items: start;
+    overflow-wrap: normal;
+}
+
+.logo {
+    width: 50vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logodiv {
+    background-color: #1e1e1e;
+    padding-top: 2vw;
+}
+
+.aboutus {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: justify;
+    gap: 3vw;
+    background-color: ivory;
+    padding-bottom: 2.8%;
+    margin-right: -0.54%;
+}
+
+.intro-gif {
+    display: block;
+    width: 46vw;
+    margin-top: 2vw;
+    margin-right: 2vw;
+    border-radius: 2vw;
+}
+.about_text {
+    color : maroon;
+    font-size: 2.7vw;
+    display: block;
+    opacity: 1;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 3.7vw;
+    margin-right: 3.7vw;
+    animation: 2s linear 0s 1 alternate sun-rise;
+}
+
+@keyframes sun-rise {
+    from {
+      /* pushes the sun down past the viewport */
+      opacity: 0;
+      transform: translateY(10%);
+    }
+    to {
+      /* returns the sun to its default position */
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.next {
+    color: maroon;
+    font-size: 7vw;
+    padding: 0;
+    margin: 0;
+    margin-top: -10vw;
+    text-align: center;
+    animation: 2s linear 0s infinite alternate sun-set;
+}
+
+@keyframes sun-set {
+    from {
+      /* pushes the sun down past the viewport */
+      opacity: 1;
+      transform: translateY(10%);
+    }
+    to {
+      /* returns the sun to its default position */
+      opacity: 0;
+      transform: translateY(0);
+    }
+}
+
